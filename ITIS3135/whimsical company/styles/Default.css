@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
 }
 
 /* Header */
@@ -11,6 +12,10 @@ header {
     color: white;
     text-align: center;
     padding: 10px;
+    background-image: src('depedencies\headerfooter.jpeg');
+    background-size: cover;
+    background-position: center;
+
 }
 
 /* Navigation */
@@ -36,6 +41,9 @@ footer {
     position:absolute;
     width:100%;
     bottom:0px;
+    background-image: src('depedencies\headerfooter.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 p {
