@@ -12,10 +12,6 @@ header {
     color: white;
     text-align: center;
     padding: 10px;
-    background-image: src('depedencies\headerfooter.jpeg');
-    background-size: cover;
-    background-position: center;
-
 }
 
 /* Navigation */
@@ -33,24 +29,27 @@ main {
     text-align: center;
 }
 
+p {
+    font-family: 'Lucida Sans', sans-serif;
+}
+
 /* Footer */
 footer {
     text-align: center;
     background: #ff9800;
     color: white;
-    position:absolute;
     width:100%;
+    height: 100px;
     bottom:0px;
-    background-image: src('depedencies\headerfooter.jpeg');
-    background-size: cover;
     background-position: center;
 }
 
-p {
-    font-family: 'Lucida Sans', sans-serif;
+img {
+    width: 512px;
+    height: 512px;
 }
 
-img {
-    width: 500px;
-    height: 600px;
-}
+
+
+
+
