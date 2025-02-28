@@ -1,0 +1,28 @@
+/* A truly awful stylesheet */
+
+body {
+    font-family: Times New Roman;
+}
+
+h1 {
+    font-size: 60px;
+    color: red;
+}
+
+h2 {
+    font-size: 30px;
+    color: blue;
+}
+
+h3 {
+    font-size: 15px;
+    color: green;
+}
+
+img {
+    border: 20px solid black;
+    border-top-style: dashed;
+    border-right-style: double;
+    border-bottom-style: groove;
+    border-left-style: inset;
+}
