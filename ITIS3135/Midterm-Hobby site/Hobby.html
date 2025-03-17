@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJC's guide to homestyle cooking</title>
+    <style>
+        /* Smooth Gradient Background */
+        body {
+            background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header & Footer Gradient */
+        header, footer {
+            background: linear-gradient(to right, #FF512F, #DD2476);
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Navigation Bar */
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            transition: 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Sections */
+        section {
+            display: none;
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        #Home { display: block; } /* Default section */
+
+        /* Styled Headers */
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Styled Table */
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+            color: white;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+        th {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        figcaption a {
+           color: lightgreen; /* Change to any color you like */
+           text-decoration: none; /* removes underline */
+           font-weight: bold; /* Optional: makes it bold */
+        }
+
+        figcaption a:hover {
+            color: skyblue; /* Changes color when hovered */
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        footer a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+        .cooktubers-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cooktubers-list li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cooktubers-list img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .cooktubers-list a {
+            text-decoration: none;
+            color: #ff6600;
+            font-weight: bold;
+        }
+
+        .cooktubers-list a:hover {
+            color: #ff3300;
+        }
+
+    </style>
+
+    <!--JS script-->
+    <script>
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll("section");
+            sections.forEach(section => section.style.display = "none");
+            document.getElementById(sectionId).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <h1>Cooking at Home, Quick and Easy! <br> by Maanav Chopra</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" onclick="showSection('Home')">Home</a>
+        <a href="#" onclick="showSection('About')">About</a>
+        <a href="#" onclick="showSection('Toolsneeded')">Tools Needed</a>
+        <a href="#" onclick="showSection('wheretostart')">Where To Start??</a>
+        <a href="#" onclick="showSection('how')">your 1st recipie!!</a>
+        <a href="#" onclick="showSection('gallery')">Photo Gallery + why cooking?</a>
+        <a href="#" onclick="showSection('Ai')">Artificial Intelligence</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="Home">
+        <h2>What is This site? and who am I??</h2>
+        <figure>
+            <img src="../Midterm-Hobby site/Pictures/mypic.jpg" 
+                 alt="mypicture" width="400">
+            <figcaption>I picture of me[I took recently becuase I didnt have a good one around]</a> </figcaption>
+        </figure>
+        <p>This website is dedicated to my Hobby of Cooking.</p><p>My name is Maanav, I love cooking new things because I loooovee food and trying different cuisines.</p>
+        <p>I will share my experiences and tips to make cooking easier for everyone.</p>
+        <p>Cooking is not just a hobby; it's an important skill everyone must know to make themselves independent.</p>
+        <p>It can be a fun and rewarding experience, and it doesn't have to be complicated!</p><br>
+        <p>Whether you're a beginner or looking to improve your skills, this site is for you.</p>           
+        <figure>
+            <img src="https://media1.tenor.com/m/T_3ejekju48AAAAd/cooking-food.gif" 
+                 alt="Cooking Animation" width="500">
+            <figcaption>GIF image from <a href="https://media1.tenor.com/m/T_3ejekju48AAAAd/cooking-food.gif">Tenor</a> </figcaption>
+        </figure>
+    </section>
+
+    <section id="About">
+        <h2>Who is This For?</h2>
+        <p>Anyone who struggles with cooking but wants to improve!</p><br>
+        <p>Whether you're a student, a busy professional, or just someone who wants to learn how to cook, this site is for you.</p>
+        <p>I know that cooking can be intimidating, it was for me in the begining too.</p><br>
+        <p>Don't worry if you have never even touched a spatula, I have easy to follow recipies that give you a step by step guides to follow!</p>
+        <p>Cooking is a great way to express your creativity and impress your friends and family or even your date.....</p><br>
+
+        <figure>
+            <img src="../Midterm-Hobby site/Pictures/cookinggud.jpeg" alt="Beginner Chef" width="500">
+            <figcaption>Image created using google Gemini.</figcaption>
+        </figure>
+    </section>
+
+    <section id="Toolsneeded">
+        <h2>What do I need to start? and What should one have??</h2>
+        <p>fret not my friend, we start from the basics.</p>
+        <p>Here are some basic tools you should have in your kitchen:</p>
+        <table>
+            <tr>
+                <th>Tool</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>Knife</td>
+                <td>For chopping and slicing ingredients.</td>
+            </tr>
+            <tr>
+                <td>Cutting Board</td>
+                <td>A surface to chop on.</td>
+            </tr>
+            <tr>
+                <td>Pots and Pans</td>
+                <td>For cooking various dishes.</td>
+            </tr>
+            <tr>
+                <td>Measuring Cups</td>
+                <td>To measure ingredients accurately.</td>
+            </tr>
+            <tr>
+                <td>Mixing Bowls</td>
+                <td>For mixing ingredients.</td>
+            </tr>
+            <tr>
+                <td>Spatula</td>
+                <td>For flipping and stirring.</td>
+            </tr>
+            <tr>
+                <td>Whisk</td>
+                <td>For mixing liquids and dry ingredients.</td>
+            </tr>
+        </table>
+        <p>These are just the basics, but as you get more into cooking, you can add more specialized tools to your collection.</p>
+        <p>Don't worry if you don't have all of these tools right away; you can start with just a few and build your collection over time.</p>
+        <p>Cooking is all about improvisation and using what you have!</p>
+
+        <figure>
+            <img src="../Midterm-Hobby site/Pictures/nekopic.jpeg" alt="cat cooks" width="500">
+            <figcaption>Image created using google Gemini.</figcaption>
+        </figure>
+    </section>
+
+    <section id="wheretostart">
+        <h2>Where to Cook my first recipe Maanav??</h2>
+        <p>I started with youtube, so can you. in the abundant landscape of internet is filled with easy to follow recipies!!</p>
+        <p>Here are some of my favorite channels to get you started:</p>
+        <ul class="cooktubers-list">
+            <li>
+                <a href="https://www.youtube.com/@YEUNGMANCOOKING" target="_blank">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_lS_pZPRk2JBKkDcv932n0DX15-o4HHPSRyLOq8vI0GCFw=s160-c-k-c0x00ffffff-no-rj" alt="YEUNGMAN Cooking">
+                    <strong>YEUNGMAN Cooking</strong>
+                </a>
+                - One of my favorite Cooktubers. He made me the cook I am today, making easy-to-follow vegetarian/vegan dishes.
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@JoshuaWeissman" target="_blank">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_nfXRvoxu5cFt2H4WhJfFLbL5SVdzmvEnFymnPzH3_1qPM=s160-c-k-c0x00ffffff-no-rj" alt="Joshua Weissman">
+                    <strong>Joshua Weissman</strong>
+                </a>
+                - Runner-up to YEUNGMAN, Joshua has a hybrid of Food Critic and Cook, but he is my go-to for new ideas.
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@PailinsKitchen" target="_blank">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_nZaViyrNVwT2vUPG5HIkQcnIQZAcbXkpIzdyEchpaodEM=s160-c-k-c0x00ffffff-no-rj" alt="Pailins Kitchen">
+                    <strong>Pailins Kitchen</strong>
+                </a>
+                - I love Asian food, especially Thai recipes, and when it comes to Thai, no one beats Ms. Pailin in terms of ease and authenticity.
+            </li>
+        </ul>
+        
+
+    </section>
+
+    <section id="how">
+        <h2>How to Begin Maanav!? you say, I dont have any Idea to say!!</h2>
+        <p>worry not we will start with one of my favorite, the recipe that look hard but is sooo easy that even a baby can make it</p>
+        <p>my friends I'm talking about making green curry, now we will see 2 videos showing how to make it. one from Yeungman, and the other from yours truly</p>
+        <p>here is the video from Yeungman first: </p>
+
+        <iframe width="1200" height="800" 
+            src="https://www.youtube.com/embed/IsxLj7jwOs8" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+        <p>and here is my video on the same topic [its a recycled vid from my previous class project]:</p>
+
+        <iframe width="1200" height="900" 
+            src="https://youtu.be/8NlyGmj1nF0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+        <p>now you can see how easy it is to make this dish, and you can look up on the table for what is needed for this!!</p>
+        <h3>Ingredients</h3>
+        <table>
+            <tr>
+                <th>Ingredient</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Mixed Vegetables</td>
+                <td>Sugar snap peas, baby carrots, red peppers, tofu, mushrooms, red onions, baby tomatoes, or your choice!</td>
+            </tr>
+            <tr>
+                <td>Jasmine Rice</td>
+                <td>For the base of the dish.</td>
+            </tr>
+            <tr>
+                <td>Coconut Milk</td>
+                <td>Used for the curry sauce (e.g., Tru Label Coconut Mylk).</td>
+            </tr>
+            <tr>
+                <td>Cilantro and Green Onions</td>
+                <td>For garnish.</td>
+            </tr>
+            <tr>
+                <td>Green Curry Paste</td>
+                <td>For flavoring the curry.</td>
+            </tr>
+            <tr>
+                <td>Toasted Sesame Oil</td>
+                <td>For seasoning the rice.</td>
+            </tr>
+            <tr>
+                <td>Salt and Pepper</td>
+                <td>For seasoning.</td>
+            </tr>
+        </table>
+
+        <h3>Directions</h3>
+        <table>
+            <tr>
+                <th>Step</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Prep and cook your rice - wash with cold water and drain. Use 2 cups of rice to 2 cups of water in the rice cooker. Season with salt and pepper, and turn the rice cooker on.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Prep the snap peas by unstringing them.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Prep the rest of your vegetables by washing and having them ready for stir fry.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Dry off your extra firm tofu with a paper towel, and slice into cubes.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Heat a sauté pan with olive oil.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Sauté tofu, garlic, and onions, then add hard vegetables, followed by soft vegetables.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Add a generous tablespoon of green curry paste.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Sauté for a couple of minutes, then deglaze with coconut milk.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Let simmer for 1 minute, then turn off the heat.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Top cooked rice with toasted sesame oil, cilantro, and green onions.</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Take a cup or bowl, scoop in some rice, pack it down gently, and place on a plate.</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Plate green coconut curry around the rice and garnish with fresh chopped cilantro.</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Enjoy your meal!</td>
+            </tr>
+        </table>
+
+
+    </section>
+
+    <section id="gallery">
+        <h2>Why Learn Cooking? lets discuss that while going over few of my favorite dishes![that I made myself]</h2>
+        <p>1: Cooking helps you eat healthier and save money.</p>
+        <p>2: It's a great way to impress your friends and family. My ma love my food, so does my father and brother!</p>
+
+        <figure>
+            <img src="../Midterm-Hobby site/Pictures/mamamiaPIZZA.jpg" alt="mamamiaPIZZA" width="500">
+            <figcaption>Image I took when I made Pizza</figcaption>
+        </figure>
+
+        <p>3: It's a valuable life skill that will make you more independent. If I want to move out tommorow I don't have to worry about food everyday!</p>
+        <p>6: It's a great way to relax and destress after a long day. eat Chilli Mac that I made after work is the best R'n R you can get, espiecially with a few beers</p>
+
+        <figure>
+            <img src="../Midterm-Hobby site/Pictures/MacaroniiiandChilliiCheze.jpg" alt="MacaroniiiandChilliiCheze" width="500">
+            <figcaption>Goes really good with Micheal bay movies.</figcaption>
+        </figure>
+
+        <p>7: You can make your favorite restaurant dishes at home. No need to spend time look for good Chinese or Indian food</p>
+        <p>8: You can control what goes into your food and avoid unhealthy additives.</p>
+
+        <figure>
+            <img src="../Midterm-Hobby site/Pictures/mouthwateringBibimbap.jpg" alt="mouthwateringBibimbap" width="500">
+            <figcaption>Took a lot of time to put togheter, but man! was it worth it.</figcaption>
+        </figure>
+        <p>9: You can cook for a date and impress them with your skills! espiecially if you can make a good Pizza!</p>
+
+        <figure>
+            <img src="../Midterm-Hobby site/Pictures/NipponNoKaari.jpg" alt="NipponNoKaari" width="500">
+            <figcaption>this is the second most easy dish I've made after Thai curry</figcaption>
+        </figure>
+
+    </section>
+
+    <section id="Ai">
+        <h2>Artificial Intelligence has indeed Aided me in making of this side</h2>
+        <p> I used ChatGPT to help me with imbedding youtube vids, make little Picture Icons for the youtubers and help me figure out CSS and JS.</p>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by <a href="https://example.com">Maanav Chopra &copy March 2025</a></p>
+        <a href="https://validator.w3.org/">HTML Validation</a> |
+        <a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a> |
+        <a href="https://wave.webaim.org/">Accessibility Check</a>
+    </footer>
+
+</body>
+</html>
