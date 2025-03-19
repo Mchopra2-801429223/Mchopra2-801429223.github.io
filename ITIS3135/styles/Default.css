@@ -1,5 +1,5 @@
-/* Basic styling */
-body {
+   /* Basic styling */
+   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -17,19 +17,43 @@ header {
 main {
     text-align: center;
     padding: 20px;
+    max-width: 1200px; /* Adjust as needed */ 
+    width: 90%; /* Adjust percentage based on design requirements */
+    margin: 0 auto; /* Centers the content horizontally */
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
     background: #0073e6;
     color: white;
+    position:absolute;
+    width:100%;
+    bottom:0px;
 }
 
 nav {
-    text-align:center;
+    text-align: center;
     background-color: burlywood;
-    color:#000000;
+    color: #000000;
     padding: 10px;
+}
+
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    #colorbox {
+        background-color:yellow;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    #colorbox {
+        background-color:orange;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    #colorbox {
+        background-color:red;
+    }
 }
