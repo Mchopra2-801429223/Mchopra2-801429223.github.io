@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maanav Chopra - ITIS3135 Table Page</title>
+    <style>
+        /* table.css */
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff4848;
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #006042;
+    color: rgb(255, 102, 0);
+    text-align: center;
+    padding: 10px;
+}
+
+header a, footer a {
+    color: rgb(217, 0, 255);
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: rgb(0, 211, 197);
+}
+
+/* Heading Styles */
+h2, h3 {
+    font-size: 1.5em;
+    color: #ce0473;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Table Caption */
+figcaption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Row Span for Complex Table */
+td[rowspan] {
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+
+/* Total Row Styling */
+tr:last-child th, tr:last-child td {
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+}
+
+/* Accessible Table Adjustments */
+table th, table td {
+    text-align: left;
+    padding: 8px;
+}
+
+/* Links Styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+    th {
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div data-include = "components/header.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </header>
+    <br>
+    <main>
+        <h2>Table Page</h2>
+        <p>This is a modified version of my homepage for my ITIS3135 course.</p>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>D.I. von Briesen - dvonbri1@uncc.edu</li>
+            <li>Esam Abdullah - eabdullah@gmail.com</li>
+            <li>Medina Gomez - gomez_med8@yahoo.com</li>
+            <li>John Doe - john.doe@company.com</li>
+            <li>Jane Smith - jane.smith@company.com</li>
+            <li>Mike Johnson - mike.johnson@company.com</li>
+            <li>Sarah Lee - sarah.lee@company.com</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>D.I. von Briesen</td>
+                <td>dvonbri1@uncc.edu</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Esam Abdullah</td>
+                <td>eabdullah@gmail.com</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Medina Gomez</td>
+                <td>gomez_med8@yahoo.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>john.doe@company.com</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>jane.smith@company.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Mike Johnson</td>
+                <td>mike.johnson@company.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Sarah Lee</td>
+                <td>sarah.lee@company.com</td>
+                <td>2</td>
+            </tr>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Bosses</td>
+                    <td>D.I. von Briesen</td>
+                    <td>dvonbri1@uncc.edu</td>
+                    <td>$1,000,000.01</td>
+                </tr>
+                <tr>
+                    <td>Esam Abdullah</td>
+                    <td>eabdullah@gmail.com</td>
+                    <td>$25,000</td>
+                </tr>
+                <tr>
+                    <td>Sales</td>
+                    <td>Medina Gomez</td>
+                    <td>gomez_med8@yahoo.com</td>
+                    <td>$55,000</td>
+                </tr>
+                <tr>
+                    <td>Marketing</td>
+                    <td>John Doe</td>
+                    <td>john.doe@company.com</td>
+                    <td>$60,000</td>
+                </tr>
+                <tr>
+                    <td>Sales</td>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@company.com</td>
+                    <td>$50,000</td>
+                </tr>
+                <tr>
+                    <td>Marketing</td>
+                    <td>Mike Johnson</td>
+                    <td>mike.johnson@company.com</td>
+                    <td>$40,000</td>
+                </tr>
+                <tr>
+                    <td>HR</td>
+                    <td>Sarah Lee</td>
+                    <td>sarah.lee@company.com</td>
+                    <td>$45,000</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td>59</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Annual Salary</th>
+                    <td>$2,275,000.01</td>
+                </tr>
+            </table>
+        </figure>
+    </main>
+        
+    <footer>
+        <div data-include = "components/footer.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </footer>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
