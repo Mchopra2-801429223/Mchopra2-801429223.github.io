@@ -1,0 +1,87 @@
+/* Nature-inspired gradient background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #a5d6a7);
+    color: #333;
+  }
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  #slideshow-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .slide-img {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #caption {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .thumbs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .thumbs img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  
+  .thumbs img.active,
+  .thumbs img:hover {
+    border-color: #388e3c;
+    transform: scale(1.05);
+  }
+  
+  section {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 500px;
+    margin-inline: auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  header {
+    background: linear-gradient(to bottom, #1be4ff, #eb30f9);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(233, 29, 29, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  footer {
+    background: linear-gradient(to bottom, #1be4ff, #eb30f9);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(233, 29, 29, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+  }
